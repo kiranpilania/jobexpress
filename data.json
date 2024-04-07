@@ -1,0 +1,203 @@
+[
+    {
+
+        "jobtype": "IT",
+        "designation": "assistant manager",
+        "joblocation": "gurugram",
+        "salary": 25000,
+        "rating": 6,
+        "companyname": "cognizant",
+        "companydescription": "Cognizant is an American multinational information technology services and consulting company..",
+        "skillsrequired": "management"
+    },
+    {
+        "jobtype": "IT",
+        "designation": "software engineer",
+        "joblocation": "bangalore",
+        "salary": 35000,
+        "rating": 7,
+        "companyname": "infosys", 
+        "companydescription": " Infosys is a global leader in next-generation digital services and consulting. We enable clients in more than 56 countries to navigate their digital transformation.",
+        "skillsrequired": "programming"
+    },
+    {
+        "jobtype": "finance",
+        "designation": "financial analyst",
+        "joblocation": "Mumbai",
+        "salary": 40000,
+        "rating": 8,
+        "companyname": "deloitte",
+        "companydescription": "Description for company Deloitte.",
+        "skillsrequired": "financial and data analysis"
+    },
+    {
+        "jobtype": "marketing",
+        "designation": "marketing coordinator",
+        "joblocation": "gurugram",
+        "salary": 45000,
+        "rating": 6.5,
+        "companyname": "accenture",
+        "companydescription": "Description for company Accenture.",
+        "skillsrequired": "marketing"
+    },
+    {
+        "jobtype": "engineering",
+        "designation": "mechanical engineer",
+        "joblocation": "chennai",
+        "salary": 47000,
+        "rating": 7.2,
+        "companyname": "tcs",
+        "companydescription": "Description for company TCS.",
+        "skillsrequired": "programming"
+    },
+    {
+        "jobtype": "healthcare",
+        "designation": "medical coder",
+        "joblocation": "pune",
+        "salary": 55000,
+        "rating": 6.8,
+        "companyname": "capgimini",
+        "companydescription": "Description for company Capgemini.",
+        "skillsrequired": "medical coding and data analysis"
+    },
+    {
+        "jobtype": "education",
+        "designation": "academic advisor",
+        "joblocation": "kolkata",
+        "salary": 30000,
+        "rating": 7.5,
+        "companyname": "pearson",
+        "companydescription": "Description for company Pearson.",
+        "skillsrequired": "academic advising"
+    },
+    {
+        "jobtype": "sales",
+        "designation": "sales representative",
+        "joblocation": "delhi",
+        "salary": 15000,
+        "rating": 7.8,
+        "companyname": "salesforce",
+        "companydescription": "Description for company Salesforce.",
+        "skillsrequired": "sales and communication skills"
+    },
+    {
+        "jobtype": "Human Resources",
+        "designation": "hr specialist",
+        "joblocation": "ahmedabad",
+        "salary": 20000,
+        "rating": 6.7,
+        "companyname": "ibm",
+        "companydescription": "Description for company IBM.",
+        "skillsrequired": "human resources"
+    },
+    {
+        "jobtype": "design",
+        "designation": "graphic designer",
+        "joblocation": "noida",
+        "salary": 67000,
+        "rating": 7.3,
+        "companyname": "adobe",
+        "companydescription": "Description for company Adobe.",
+        "skillsrequired": "graphic designing and creative thinking"
+    },
+    {
+        "jobtype": "IT",
+        "designation": "software engineer",
+        "joblocation": "San Francisco",
+        "salary": 120000,
+        "rating": 4.5,
+        "companyname": "Google",
+        "companydescription": "Description for company Google.",
+        "skillsrequired": "programming"
+    },
+    {
+        "jobtype": "finance",
+        "designation": "financial analyst",
+        "joblocation": "New York",
+        "salary": 85000,
+        "rating": 4.1,
+        "companyname": "JPMorgan Chase",
+        "companydescription": "Description for company JPMorgan Chase.",
+        "skillsrequired": "financial and data analysis"
+    },
+    {
+        "jobtype": "healthcare",
+        "designation": "registered nurse",
+        "joblocation": "Chicago",
+        "salary": 70000,
+        "rating": 4.8,
+        "companyname": "Mayo Clinic",
+        "companydescription": "Description for company Mayo Clinic.",
+        "skillsrequired": "Nursing"
+    },
+    {
+        "jobtype": "marketing",
+        "designation": "marketing manager",
+        "joblocation": "Los Angeles",
+        "salary": 95000,
+        "rating": 4.2,
+        "companyname": "Coca-Cola",
+        "companydescription": "Description for company Coca-Cola.",
+        "skillsrequired": "marketing"
+    },
+    {
+        "jobtype": "manufacturing",
+        "designation": "production engineer",
+        "joblocation": "Detroit",
+        "salary": 80000,
+        "rating": 3.9,
+        "companyname": "Ford",
+        "companydescription": "Description for company Ford.",
+        "skillsrequired": "Manufacturing processes"
+    },
+    {
+        "jobtype": "IT",
+        "designation": "e-commerce specialist",
+        "joblocation": "Seattle",
+        "salary": 90000,
+        "rating": 4.5,
+        "companyname": "Amazon",
+        "companydescription": "Description for company Amazon.",
+        "skillsrequired": "programming"
+    },
+    {
+        "jobtype": "entertainment",
+        "designation": "video game developer",
+        "joblocation": "Austin",
+        "salary": 110000,
+        "rating": 4.0,
+        "companyname": "Electronic Arts (EA)",
+        "companydescription": "Description for company Electronic Arts (EA).",
+        "skillsrequired": "Game development"
+    },
+    {
+        "jobtype": "consulting",
+        "designation": "management consultant",
+        "joblocation": "Washington, D.C.",
+        "salary": 105000,
+        "rating": 4.6,
+        "companyname": "McKinsey & Company",
+        "companydescription": "Description for company McKinsey & Company.",
+        "skillsrequired": "Strategic consulting"
+    },
+    {
+        "jobtype": "telecommunications",
+        "designation": "network engineer",
+        "joblocation": "Dallas",
+        "salary": 95000,
+        "rating": 4.3,
+        "companyname": "AT&T",
+        "companydescription": "Description for company AT&T.",
+        "skillsrequired": "Networking"
+    },
+    {
+        "jobtype": "education",
+        "designation": "teacher",
+        "joblocation": "Boston",
+        "salary": 60000,
+        "rating": 4.7,
+        "companyname": "Harvard University",
+        "companydescription": "Description for company Harvard University.",
+        "skillsrequired": "Teaching"
+    }
+]

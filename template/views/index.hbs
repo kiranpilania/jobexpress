@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Arcade Quiz</title>
+    <link rel="icon" href="/img/img1.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="../../public/js/app.js"></script>
+</head>
+
+<body>
+    <div>
+        {{>header}}
+    </div>
+    <div style="margin-left: 100px; margin-right: 50px">
+
+       
+
+    </div>
+    <div>
+        <form action="showjobdetails">
+            <div class="fs-3 fw-bold p-3">
+                Introduction
+            </div>
+            <div class="p-3">
+                <div class="text-center fs-8">Cultivating excellence in every endeavor, I embark on this journey
+                    with fervor and purpose in my quest for the perfect fit. With a blend of skills honed
+                    through experience and a relentless drive for success, I eagerly seek to contribute my
+                    talents to an organization that values innovation, collaboration, and growth. Let this
+                    application mark the beginning of an exciting partnership where mutual aspirations meet
+                    boundless opportunities.</div><br>
+                <div class="row justify-content-center align-items-center p-3">
+                    <div class="col-auto">
+                        <label for="name" class="form-label">Your Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Ex. Jhon Doe" required>
+
+                    </div>
+                    <div class="col-auto">
+                        <label for="name" class="form-label">Your Skills:</label>
+                        <input type="text" class="form-control" id="skills" name="name" placeholder="Ex. Engineering">
+
+                    </div>
+
+                </div>
+                <div class="text-center"></div><br>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Show Job details</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    </div>
+    <div class="col-1"></div>
+    </div>
+    <div>
+        {{>footer}}
+    </div>
+</body>
+
+</html>
