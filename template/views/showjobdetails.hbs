@@ -1,6 +1,15 @@
 {{#each jsonData}}
-<div class="card mb-3">
-   {{this.jobtype}}
+<div class="card mb-3" style="border: 10px; text-align:center; background-color:blanchedalmond; margin-left:300px; margin-right: 300px">
+   Job Type: {{this.jobtype}} <br>
+   Designation: {{this.designation}} <br>
+   Job Location{{this.joblocation}} <br>
+   Salary: {{this.salary}} <br>
+   Rating: {{this.rating}} <br>
+   Company Name: {{this.companyname}} <br>
+   Company Description: {{this.companydescription}} <br>
+   Skills Required: {{this.skillsrequired}} <br>
+   <button type="submit" style="color: blue;">Apply</button> <hr>
    
-</div>
+   
+</div><br>
 {{/each}}

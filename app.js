@@ -16,7 +16,6 @@ hbs.registerPartials(partialPath);
 
 app.use(express.static(publicDirectoryPath));
 
-
 const job_dataNotes = function () {
     try {
         const dataBuffer = fs.readFileSync('data.json')
