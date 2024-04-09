@@ -1,50 +1,20 @@
 [
   {
-    "jobid": "2",
-    "companyname": "infosys"
+    "jobid": "7",
+    "companyname": "pearson",
+    "designation": "academic advisor",
+    "salary": "30000"
+  },
+  {
+    "jobid": "8",
+    "companyname": "salesforce",
+    "designation": "sales representative",
+    "salary": "15000"
   },
   {
     "jobid": "3",
-    "companyname": "deloitte"
-  },
-  {
-    "jobid": "1",
-    "companyname": "cognizant"
-  },
-  {
-    "jobid": "1",
-    "companyname": "cognizant"
-  },
-  {
-    "jobid": "2",
-    "companyname": "infosys"
-  },
-  {
-    "jobid": "18",
-    "companyname": "McKinsey & Company"
-  },
-  {
-    "jobid": "19",
-    "companyname": "AT&T"
-  },
-  {
-    "jobid": "1",
-    "companyname": "cognizant"
-  },
-  {
-    "jobid": "2",
-    "companyname": "infosys"
-  },
-  {
-    "jobid": "2",
-    "companyname": "infosys"
-  },
-  {
-    "jobid": "3",
-    "companyname": "deloitte"
-  },
-  {
-    "jobid": "9",
-    "companyname": "ibm"
+    "companyname": "deloitte",
+    "designation": "financial analyst",
+    "salary": "40000"
   }
 ]

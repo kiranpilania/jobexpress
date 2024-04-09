@@ -50,10 +50,6 @@ const job_dataNotes = function (skill) {
     }
 };
 
-
-
-
-
 app.get('', (req, res) =>
 {
     res.render('index',{
@@ -136,6 +132,22 @@ app.post('/applyJob', (req, res) => {
          res.render('appliedjob', { jsonData: jsonData, name: '' });
      });
  })
+
+//to remove any particular data from applied job data
+  
+ const jobApplications = JSON.parse(fs.readFileSync('job_applications.json'));
+ app.delete('/removeJob/:jobId', (req, res) => {
+    const jobId = req.params.jobId;
+
+    // Remove the job with the specified jobId from the data
+    const updatedJobApplications = jobApplications.filter(job => job.jobid !== jobId);
+
+    // Update the data file with the updated job applications data
+    fs.writeFileSync('job_applications.json', JSON.stringify(updatedJobApplications, null, 2));
+
+    // Send a success response
+    res.status(200).send('Job removed successfully');
+});
 
 
 
