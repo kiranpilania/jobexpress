@@ -1,6 +1,6 @@
 [
     {
-
+        "jobid": 1,
         "jobtype": "IT",
         "designation": "assistant manager",
         "joblocation": "gurugram",
@@ -11,16 +11,18 @@
         "skillsrequired": "management"
     },
     {
+        "jobid": 2,
         "jobtype": "IT",
         "designation": "software engineer",
         "joblocation": "bangalore",
         "salary": 35000,
         "rating": 7,
-        "companyname": "infosys", 
+        "companyname": "infosys",
         "companydescription": " Infosys is a global leader in next-generation digital services and consulting. We enable clients in more than 56 countries to navigate their digital transformation.",
         "skillsrequired": "programming"
     },
     {
+        "jobid": 3,
         "jobtype": "finance",
         "designation": "financial analyst",
         "joblocation": "Mumbai",
@@ -31,6 +33,7 @@
         "skillsrequired": "financial and data analysis"
     },
     {
+        "jobid": 4,
         "jobtype": "marketing",
         "designation": "marketing coordinator",
         "joblocation": "gurugram",
@@ -41,6 +44,7 @@
         "skillsrequired": "marketing"
     },
     {
+        "jobid": 5,
         "jobtype": "engineering",
         "designation": "mechanical engineer",
         "joblocation": "chennai",
@@ -51,6 +55,7 @@
         "skillsrequired": "programming"
     },
     {
+        "jobid": 6,
         "jobtype": "healthcare",
         "designation": "medical coder",
         "joblocation": "pune",
@@ -61,6 +66,7 @@
         "skillsrequired": "medical coding and data analysis"
     },
     {
+        "jobid": 7,
         "jobtype": "education",
         "designation": "academic advisor",
         "joblocation": "kolkata",
@@ -71,6 +77,7 @@
         "skillsrequired": "academic advising"
     },
     {
+        "jobid": 8,
         "jobtype": "sales",
         "designation": "sales representative",
         "joblocation": "delhi",
@@ -81,6 +88,7 @@
         "skillsrequired": "sales and communication skills"
     },
     {
+        "jobid": 9,
         "jobtype": "Human Resources",
         "designation": "hr specialist",
         "joblocation": "ahmedabad",
@@ -91,6 +99,7 @@
         "skillsrequired": "human resources"
     },
     {
+        "jobid": 10,
         "jobtype": "design",
         "designation": "graphic designer",
         "joblocation": "noida",
@@ -101,6 +110,7 @@
         "skillsrequired": "graphic designing and creative thinking"
     },
     {
+        "jobid": 11,
         "jobtype": "IT",
         "designation": "software engineer",
         "joblocation": "San Francisco",
@@ -111,6 +121,7 @@
         "skillsrequired": "programming"
     },
     {
+        "jobid": 12,
         "jobtype": "finance",
         "designation": "financial analyst",
         "joblocation": "New York",
@@ -121,6 +132,7 @@
         "skillsrequired": "financial and data analysis"
     },
     {
+        "jobid": 13,
         "jobtype": "healthcare",
         "designation": "registered nurse",
         "joblocation": "Chicago",
@@ -131,6 +143,7 @@
         "skillsrequired": "Nursing"
     },
     {
+        "jobid": 14,
         "jobtype": "marketing",
         "designation": "marketing manager",
         "joblocation": "Los Angeles",
@@ -141,6 +154,7 @@
         "skillsrequired": "marketing"
     },
     {
+        "jobid": 15,
         "jobtype": "manufacturing",
         "designation": "production engineer",
         "joblocation": "Detroit",
@@ -151,6 +165,7 @@
         "skillsrequired": "Manufacturing processes"
     },
     {
+        "jobid": 16,
         "jobtype": "IT",
         "designation": "e-commerce specialist",
         "joblocation": "Seattle",
@@ -161,16 +176,18 @@
         "skillsrequired": "programming"
     },
     {
+        "jobid": 17,
         "jobtype": "entertainment",
         "designation": "video game developer",
         "joblocation": "Austin",
         "salary": 110000,
-        "rating": 4.0,
+        "rating": 4,
         "companyname": "Electronic Arts (EA)",
         "companydescription": "Description for company Electronic Arts (EA).",
         "skillsrequired": "Game development"
     },
     {
+        "jobid": 18,
         "jobtype": "consulting",
         "designation": "management consultant",
         "joblocation": "Washington, D.C.",
@@ -181,6 +198,7 @@
         "skillsrequired": "Strategic consulting"
     },
     {
+        "jobid": 19,
         "jobtype": "telecommunications",
         "designation": "network engineer",
         "joblocation": "Dallas",
@@ -191,6 +209,7 @@
         "skillsrequired": "Networking"
     },
     {
+        "jobid": 20,
         "jobtype": "education",
         "designation": "teacher",
         "joblocation": "Boston",

@@ -8,7 +8,6 @@
 
 
     <style>
-
         .Card {
             border: 1px solid black;
             border-radius: 100px;
@@ -19,6 +18,7 @@
 
 
         .slide-container {
+            padding: 20px;
             display: flex;
             width: calc(250px * 4);
             animation: scroll 20s linear infinite;
@@ -38,8 +38,16 @@
             display: flex;
             align-items: center;
             padding: 15px;
+            margin-top: -150px;
         }
     </style>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JavaScript (optional if you're using dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
 
@@ -54,10 +62,11 @@
     </div> --}}
 
 
-    <div class="container-fluid" style="margin-top:-26px; text-align: center; background-image:url(/img/bgimg3.webp);background-repeat: no-repeat;background-size: cover;">
+    <div class="container-fluid"
+        style="margin-top:-26px; text-align: center; background-image:url(/img/bgimg3.webp);background-repeat: no-repeat;background-size: cover;">
 
         <form action="showjobdetails">
-            <div class="fs-3 fw-bold p-3" >
+            <div class="fs-3 fw-bold p-3">
                 Introduction
             </div>
             <div class="p-3">
@@ -66,19 +75,53 @@
                     through experience and a relentless drive for success, I eagerly seek to contribute my
                     talents to an organization that values innovation, collaboration, and growth. Let this
                     application mark the beginning of an exciting partnership where mutual aspirations meet
-                    boundless opportunities.</div><br>
-                <div class="row justify-content-center align-items-center p-3">
+                    boundless opportunities.</div><br> <br>
+                <div class="row justify-content-center align-items-center p-3" style="margin-top: 100px;">
                     <div class="col-auto" style="background-color: blanchedalmond;">
-                        <label for="name" class="form-label">Your Name:</label>
+                        <label for="name" class="form-label" style="margin-bottom: 8px;">Your Name:</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Ex. Jhon Doe"
                             required><br>
 
                     </div>
-                    <div class="col-auto" style="background-color: blanchedalmond;">
+                    {{!-- <div class="col-auto" style="background-color: blanchedalmond;">
                         <label for="name" class="form-label">Your Skills:</label>
-                        <input type="text" class="form-control" id="skills" name="name" placeholder="Ex. Engineering"><br>
+                        <input type="text" class="form-control" id="skills" name="name"
+                            placeholder="Ex. Engineering"><br>
 
+                    </div> --}}
+
+
+
+                    <div class="dropdown col-auto" style="background-color: blanchedalmond; padding: 12px">
+                        <label for="name" class="form-label">Your Skills:</label>
+                        <input type="text" class="form-control btn dropdown-toggle" style="border-color: rgb(232, 227, 227); background-color: white"
+                            id="dropdownPlaceholder" name="name" data-bs-toggle="dropdown" aria-expanded="false"
+                            placeholder="Dropdown button">
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownPlaceholder">
+                            <li><a class="dropdown-item" href="#">programming</a></li>
+                            <li><a class="dropdown-item" href="#">management</a></li>
+                            <li><a class="dropdown-item" href="#">marketing</a></li>
+                            <li><a class="dropdown-item" href="#">academic advising</a></li>
+                            <li><a class="dropdown-item" href="#">human resources</a></li>
+                            <li><a class="dropdown-item" href="#">Nursing</a></li>
+                            <li><a class="dropdown-item" href="#">sales and communication skills</a></li>
+                            <li><a class="dropdown-item" href="#">medical coding and data analysis</a></li>
+                            <li><a class="dropdown-item" href="#">financial and data analysis</a></li>
+                        </ul>
                     </div>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const dropdownPlaceholder = document.getElementById('dropdownPlaceholder');
+                            const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+                            dropdownItems.forEach(item => {
+                                item.addEventListener('click', function () {
+                                    dropdownPlaceholder.value = item.textContent.trim();
+                                });
+                            });
+                        });
+                    </script>
+
 
                 </div>
                 <div class="text-center"></div><br>
@@ -98,7 +141,8 @@
             display: grid;
             place-items: center;
             overflow: hidden;
-            cell-spacing: 20px">
+            cell-spacing: 20px;
+            margin-top: 50px"> Companies Visiting:
         <div class="slide-container">
             <div class="slide-image">
                 <div class="Card">
@@ -137,7 +181,7 @@
                 <div class="Card">
                     <img src="/img/TCS.jpg" alt="">
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -150,8 +194,8 @@
     constructor, deconstructor,
     this keyword,
     inheritance,
-    
-     --}}
+
+    --}}
     </div>
     <div class="container">
         {{>footer}}

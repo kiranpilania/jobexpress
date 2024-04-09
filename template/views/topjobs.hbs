@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JavaScript (optional if you're using dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+<body>
+  <div>
+    <div style="background-image: url(/img/images.jpeg);background-repeat: no-repeat;background-size: cover;">
+        {{>header}}
+    </div>
+
+    <div class="container" style="text-align: center;">
+      <div class="row" >
+        <div class="col">
+          <div class="card" style="height: 120%;">
+            <a href="#">
+              <img src="/img/topjobdes.avif" class="card-img-top rounded-circle" style="width: 270px; height:97%" alt="Image 1">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Graphic designing and creative thinking</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="height: 120%;">
+            <a href="#">
+            <img src="/img/topjobfin.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:100%;" alt="Image 2">
+            <div class="card-body text-center " style="margin-top: -20px;"><br>
+              <p class="card-text" style="color: black;">Financial and Data Analyst</p>
+            </div></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"style="height: 120%;" >
+            <a href="#">
+            <img src="/img/topjobmark.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:95%" alt="Image 3">
+            <div class="card-body text-center">
+              <p class="card-text" style="color: black;">Marketing</p>
+            </div></a>
+          </div>
+        </div>
+      </div><br><br><br>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="height: 110%;">
+              <a href="#">
+              <img src="/img/topjobmed.png" class="card-img-top rounded-circle" style="width: 270px; height:91%" alt="Image 1">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Medical Related Jobs</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="height: 110%;">
+            <a href="#">
+            <img src="/img/topjobnet.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:104%;" alt="Image 2">
+            <div class="card-body text-center">
+              <p class="card-text" style="color: black;">Networking Jobs</p>
+            </div></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="height: 110%;">
+            <a href="#">
+            <img src="/img/topjobprog.webp" class="card-img-top rounded-circle" style="width: 270px; height:84%; margin-bottom:-2px" alt="Image 3">
+            <div class="card-body text-center">
+              <p class="card-text" style="color: black;">Programming Jobs</p>
+            </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{>footer}}
+</body>
+</html>
