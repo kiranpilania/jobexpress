@@ -1,23 +1,26 @@
-<html>
-  <head>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+{{!-- <html>
 
-    <!-- Bootstrap JavaScript (optional if you're using dropdowns) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
+<head>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JavaScript (optional if you're using dropdowns) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
 <body>
   <div>
     <div style="background-image: url(/img/images.jpeg);background-repeat: no-repeat;background-size: cover;">
-        {{>header}}
+      {{>header}}
     </div>
 
     <div class="container" style="text-align: center;">
-      <div class="row" >
+      <div class="row">
         <div class="col">
           <div class="card" style="height: 120%;">
             <a href="#">
-              <img src="/img/topjobdes.avif" class="card-img-top rounded-circle" style="width: 270px; height:97%" alt="Image 1">
+              <img src="/img/topjobdes.avif" class="card-img-top rounded-circle" style="width: 270px; height:97%"
+                alt="Image 1">
               <div class="card-body text-center">
                 <p class="card-text" style="color: black;">Graphic designing and creative thinking</p>
               </div>
@@ -27,27 +30,32 @@
         <div class="col">
           <div class="card" style="height: 120%;">
             <a href="#">
-            <img src="/img/topjobfin.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:100%;" alt="Image 2">
-            <div class="card-body text-center " style="margin-top: -20px;"><br>
-              <p class="card-text" style="color: black;">Financial and Data Analyst</p>
-            </div></a>
+              <img src="/img/topjobfin.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:100%;"
+                alt="Image 2">
+              <div class="card-body text-center " style="margin-top: -20px;"><br>
+                <p class="card-text" style="color: black;">Financial and Data Analyst</p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col">
-          <div class="card"style="height: 120%;" >
+          <div class="card" style="height: 120%;">
             <a href="#">
-            <img src="/img/topjobmark.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:95%" alt="Image 3">
-            <div class="card-body text-center">
-              <p class="card-text" style="color: black;">Marketing</p>
-            </div></a>
+              <img src="/img/topjobmark.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:95%"
+                alt="Image 3">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Marketing</p>
+              </div>
+            </a>
           </div>
         </div>
       </div><br><br><br>
       <div class="row">
         <div class="col">
           <div class="card" style="height: 110%;">
-              <a href="#">
-              <img src="/img/topjobmed.png" class="card-img-top rounded-circle" style="width: 270px; height:91%" alt="Image 1">
+            <a href="#">
+              <img src="/img/topjobmed.png" class="card-img-top rounded-circle" style="width: 270px; height:91%"
+                alt="Image 1">
               <div class="card-body text-center">
                 <p class="card-text" style="color: black;">Medical Related Jobs</p>
               </div>
@@ -57,19 +65,23 @@
         <div class="col">
           <div class="card" style="height: 110%;">
             <a href="#">
-            <img src="/img/topjobnet.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:104%;" alt="Image 2">
-            <div class="card-body text-center">
-              <p class="card-text" style="color: black;">Networking Jobs</p>
-            </div></a>
+              <img src="/img/topjobnet.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:104%;"
+                alt="Image 2">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Networking Jobs</p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col">
           <div class="card" style="height: 110%;">
             <a href="#">
-            <img src="/img/topjobprog.webp" class="card-img-top rounded-circle" style="width: 270px; height:84%; margin-bottom:-2px" alt="Image 3">
-            <div class="card-body text-center">
-              <p class="card-text" style="color: black;">Programming Jobs</p>
-            </div></a>
+              <img src="/img/topjobprog.webp" class="card-img-top rounded-circle"
+                style="width: 270px; height:84%; margin-bottom:-2px" alt="Image 3">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Programming Jobs</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -77,4 +89,228 @@
   </div>
   {{>footer}}
 </body>
+
+</html> --}}
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JavaScript (optional if you're using dropdowns) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Custom JavaScript to control collapse behavior
+    document.addEventListener('DOMContentLoaded', function () {
+      var collapses = document.querySelectorAll('.collapse');
+
+      collapses.forEach(function (collapse) {
+        collapse.addEventListener('show.bs.collapse', function () {
+          collapses.forEach(function (otherCollapse) {
+            if (otherCollapse !== collapse && otherCollapse.classList.contains('show')) {
+              otherCollapse.classList.remove('show');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div>
+    <div style="background-image: url(/img/images.jpeg);background-repeat: no-repeat;background-size: cover;">
+      {{>header}}
+    </div>
+
+    <div class="container" style="text-align: center;">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="height: 120%;">
+            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse1">
+              <img src="/img/topjobdes.avif" class="card-img-top rounded-circle" style="width: 270px; height:97%; margin-top:20px"
+                alt="Image 1">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Graphic designing and creative thinking</p>
+              </div>
+            </a> <br> <br>
+            <div id="collapse1" class="collapse">
+              <!-- Detailed content inside the collapse container -->
+              <!-- Add your detailed content here -->
+              <div class="card-body">
+                <ul style="background-color: bisque; text-align:left; margin-bottom: 20px">
+                  <li>Art Director</li>
+                  <li>UI/UX Designer</li>
+                  <li>Graphic Designer</li>
+                  <li>Web Designer</li>
+                  <li>Animator</li>
+                  <li>Branding</li>
+                  <li>Advertising</li>
+                  <li>Book Design</li>
+                  <li>Data and information visualization</li>
+                  <li><a href="https://dribbble.com/resources/career/types-of-graphic-design">Click here for the career path to follow</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat this structure for other cards -->
+        <div class="col">
+          <div class="card" style="height: 120%;">
+            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse2">
+              <img src="/img/topjobfin.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:100%; margin-top:20px"
+                alt="Image 2">
+              <div class="card-body text-center " style="margin-top: -20px;"><br>
+                <p class="card-text" style="color: black;">Financial and Data Analyst</p>
+              </div>
+            </a> <br>
+            <div id="collapse2" class="collapse">
+              <!-- Detailed content inside the collapse container -->
+              <!-- Add your detailed content here -->
+              <div class="card-body">
+                <ul style="background-color: bisque; text-align:left; margin-bottom: 20px">
+                  <li>Business Analyst</li>
+                  <li>Research Analyst</li>
+                  <li>Business intelligence</li>
+                  <li>Data analysis</li>
+                  <li>Data journalist</li>
+                  <li>Operations Analyst</li>
+                  <li>Risk Analyst</li>
+                  <li>Marketing Analyst</li>
+                  <li>Finance</li>
+                  <li><a href="https://www.cfainstitute.org/en/programs/cfa/charterholder-careers/roles/financial-data-analyst">Click here for the career path to follow</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="height: 120%;">
+            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse3">
+              <img src="/img/topjobmark.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:95%; margin-top:20px"
+                alt="Image 3">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Marketing</p>
+              </div>
+            </a> <br>
+            <div id="collapse3" class="collapse">
+              <!-- Detailed content inside the collapse container -->
+              <!-- Add your detailed content here -->
+              <div class="card-body">
+                
+                <ul style="background-color: bisque; text-align:left; margin-bottom: 20px">
+                  <li>Public relations specialist</li>
+                  <li>Market research analyst</li>
+                  <li>Paid advertising buyer</li>
+                  <li>Media coordinator</li>
+                  <li>Brand strategist</li>
+                  <li>Promotions director</li>
+                  <li>Digital marketing strategist</li>
+                  <li>Social media manager</li>
+                  <li>Account executive</li>
+                  <li><a href="https://www.indeed.com/career-advice/finding-a-job/marketing-career-path">Click here for the career path to follow</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br> <br>
+      <div class="row">
+        <!-- Add more collapsible cards here -->
+        <!-- Example -->
+        <div class="col">
+          <div class="card" style="height: 110%;">
+            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse4">
+              <img src="/img/topjobmed.png" class="card-img-top rounded-circle" style="width: 270px; height:91%; margin-top:20px"
+                alt="Image 1">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Medical Related Jobs</p>
+              </div>
+            </a>
+            <div id="collapse4" class="collapse">
+              <!-- Detailed content inside the collapse container -->
+              <!-- Add your detailed content here -->
+              <div class="card-body">
+                <ul style="background-color: bisque; text-align:left; margin-bottom: 20px">
+                  <li>Dentist</li>
+                  <li>Occupational Therapist</li>
+                  <li>Physical Therapist</li>
+                  <li>Speech and Language Therapist</li>
+                  <li>Nurse Practitioner</li>
+                  <li>Physician assistant</li>
+                  <li>Healthcare Manager</li>
+                  <li>Medical assistant</li>
+                  <li><a href="https://college.mayo.edu/academics/explore-health-care-careers/careers-a-z/">Click here for the career path to follow</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="height: 110%;">
+            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse5">
+              <img src="/img/topjobnet.jpeg" class="card-img-top rounded-circle" style="width: 270px; height:110%; margin-top:20px"
+                alt="Image 1">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Networking Jobs</p>
+              </div>
+            </a> <br>
+            <div id="collapse5" class="collapse">
+              <!-- Detailed content inside the collapse container -->
+              <!-- Add your detailed content here -->
+              <div class="card-body">
+                <ul style="background-color: bisque; text-align:left; margin-bottom: 20px">
+                  <li>It Support Speciality</li>
+                  <li>Network Specialist</li>
+                  <li>Cybersecurity Speciality</li>
+                  <li>Software and Web Developers</li>
+                  <li>Data Specialist</li>
+                  <li>Network Engineer</li>
+                  <li>Network Analyst</li>
+                  <li><a href="https://www.netacad.com/careers/pathways-and-certifications">Click here for the career path to follow</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="height: 110%;">
+            <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse6">
+              <img src="/img/topjobprog.webp" class="card-img-top rounded-circle" style="width: 270px; height:91%; margin-top:20px"
+                alt="Image 1">
+              <div class="card-body text-center">
+                <p class="card-text" style="color: black;">Programming Jobs</p> 
+              </div>
+            </a> <br>
+            <div id="collapse6" class="collapse">
+              
+              <div class="card-body">
+                <ul style="background-color: bisque; text-align:left; margin-bottom: 20px">
+                  <li>Web Developer</li>
+                  <li>Software Developer</li>
+                  <li>Data Analyst</li>
+                  <li>Data Science</li>
+                  <li>Computer Engineering</li>
+                  <li>Computer programmer</li>
+                  <li>Lead Architect</li>
+                  <li>Database Administrator</li>
+                  <li>DevOps Engineer</li>
+                  <li><a href="https://www.thinkful.com/blog/coding-career-path/">Click here for the career path to follow</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <br>
+  {{>footer}}
+</body>
+
 </html>

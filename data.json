@@ -41,7 +41,7 @@
         "rating": 6.5,
         "companyname": "accenture",
         "companydescription": "Description for company Accenture.",
-        "skillsrequired": "marketing"
+        "skillsrequired": ["marketing"]
     },
     {
         "jobid": 5,

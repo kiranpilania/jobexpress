@@ -22,15 +22,35 @@ hbs.registerPartials(partialPath);
 
 app.use(express.static(publicDirectoryPath));
 
-const job_dataNotes = function () {
+// const job_dataNotes = function () {
+//     try {
+//         const dataBuffer = fs.readFileSync('data.json')
+//         const dataJSON = dataBuffer.toString()
+//         return JSON.parse(dataJSON)
+//     } catch (e) {
+//         return []
+//     }
+// };
+
+const job_dataNotes = function (skill) {
     try {
-        const dataBuffer = fs.readFileSync('data.json')
-        const dataJSON = dataBuffer.toString()
-        return JSON.parse(dataJSON)
+        const dataBuffer = fs.readFileSync('data.json');
+        const dataJSON = dataBuffer.toString();
+        const allJobs = JSON.parse(dataJSON);
+        
+        // Filter jobs based on skill
+        if (skill) {
+            return allJobs.filter(job => job.skillsrequired.includes(skill));
+        } else {
+            return allJobs; // Return all jobs if no skill provided
+        }
     } catch (e) {
-        return []
+        console.error('Error reading data:', e);
+        return [];
     }
 };
+
+
 
 
 
@@ -42,14 +62,21 @@ app.get('', (req, res) =>
     })
 })
 
-app.get('/showjobdetails', (req, res) =>
-{
-    fs.readFile('data.json', (err, data) => {
-        if (err) throw err;
-        const jsonData = JSON.parse(data);
-        res.render('showjobdetails', { jsonData: jsonData, title: 'Job_Hunt' });
-    });
+// app.get('/showjobdetails', (req, res) =>
+// { 
+//     const skill = req.query.skills;
+//     const name = req.query.name;
+//     const jsonData = job_dataNotes(skill);
+//     res.render('showjobdetails', { jsonData: jsonData, title: 'Job Hunt', name: name }); 
+// })
+
+app.get('/showjobdetails', (req, res) => { 
+    const skill = req.query.skills;
+    const name = req.query.name;
+    const jsonData = job_dataNotes(skill);
+    res.render('showjobdetails', { jsonData: jsonData, title: 'Job Hunt', name: name }); 
 })
+
 
 
 

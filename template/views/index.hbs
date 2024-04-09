@@ -95,9 +95,9 @@
                     <div class="dropdown col-auto" style="background-color: blanchedalmond; padding: 12px">
                         <label for="name" class="form-label">Your Skills:</label>
                         <input type="text" class="form-control btn dropdown-toggle" style="border-color: rgb(232, 227, 227); background-color: white"
-                            id="dropdownPlaceholder" name="name" data-bs-toggle="dropdown" aria-expanded="false"
-                            placeholder="Dropdown button">
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownPlaceholder">
+                            id="skill" name="skills" data-bs-toggle="dropdown" aria-expanded="false"
+                            placeholder="Ex. Programming">
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="skills">
                             <li><a class="dropdown-item" href="#">programming</a></li>
                             <li><a class="dropdown-item" href="#">management</a></li>
                             <li><a class="dropdown-item" href="#">marketing</a></li>
@@ -111,12 +111,12 @@
                     </div>
                     <script>
                         document.addEventListener("DOMContentLoaded", function () {
-                            const dropdownPlaceholder = document.getElementById('dropdownPlaceholder');
+                            const skill = document.getElementById('skill');
                             const dropdownItems = document.querySelectorAll('.dropdown-item');
 
                             dropdownItems.forEach(item => {
                                 item.addEventListener('click', function () {
-                                    dropdownPlaceholder.value = item.textContent.trim();
+                                    skill.value = item.textContent.trim();
                                 });
                             });
                         });
@@ -186,16 +186,6 @@
         </div>
     </div>
 
-
-
-    {{!-- </div>
-    <div class="col-1"></div>
-    public, private
-    constructor, deconstructor,
-    this keyword,
-    inheritance,
-
-    --}}
     </div>
     <div class="container">
         {{>footer}}
