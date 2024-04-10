@@ -53,7 +53,7 @@ const job_dataNotes = function (skill) {
 app.get('', (req, res) =>
 {
     res.render('index',{
-        title: 'Job Hunt',
+        title: 'Job Sync',
         name: 'My Name'
     })
 })
