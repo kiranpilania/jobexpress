@@ -1,20 +1,8 @@
 [
   {
-    "jobid": "2",
-    "companyname": "infosys",
-    "designation": "software engineer",
-    "salary": "35000"
-  },
-  {
-    "jobid": "5",
-    "companyname": "tcs",
-    "designation": "mechanical engineer",
-    "salary": "47000"
-  },
-  {
-    "jobid": "11",
-    "companyname": "Google",
-    "designation": "software engineer",
-    "salary": "120000"
+    "jobid": "1",
+    "companyname": "cognizant",
+    "designation": "assistant manager",
+    "salary": "25000"
   }
 ]

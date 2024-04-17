@@ -12,25 +12,14 @@ const port = process.env.PORT||3000;
 const publicDirectoryPath = path.join(__dirname, '/public');
 const viewPath = path.join(__dirname, '/template/views');
 const partialPath = path.join(__dirname, '/template/partials');
-
-
 app.use(bodyParser.json());
 
 app.set('view engine', 'hbs');
 app.set('views', viewPath);
 hbs.registerPartials(partialPath);
-
 app.use(express.static(publicDirectoryPath));
 
-// const job_dataNotes = function () {
-//     try {
-//         const dataBuffer = fs.readFileSync('data.json')
-//         const dataJSON = dataBuffer.toString()
-//         return JSON.parse(dataJSON)
-//     } catch (e) {
-//         return []
-//     }
-// };
+
 
 const job_dataNotes = function (skill) {
     try {
@@ -58,14 +47,6 @@ app.get('', (req, res) =>
     })
 })
 
-// app.get('/showjobdetails', (req, res) =>
-// { 
-//     const skill = req.query.skills;
-//     const name = req.query.name;
-//     const jsonData = job_dataNotes(skill);
-//     res.render('showjobdetails', { jsonData: jsonData, title: 'Job Hunt', name: name }); 
-// })
-
 app.get('/showjobdetails', (req, res) => { 
     const skill = req.query.skills;
     const name = req.query.name;
@@ -79,14 +60,14 @@ app.get('/showjobdetails', (req, res) => {
 app.get('/about', (req, res) =>
 {
     res.render('about',{
-        title: 'Job Hunt',
+        title: 'Job Sync',
     })
 })
 
 app.get('/topjobs', (req, res) =>
 {
     res.render('topjobs',{
-        title: 'Job Hunt',
+        title: 'Job Sync',
     })
 })
 
@@ -133,8 +114,8 @@ app.post('/applyJob', (req, res) => {
      });
  })
 
+ 
 //to remove any particular data from applied job data
-  
  const jobApplications = JSON.parse(fs.readFileSync('job_applications.json'));
  app.delete('/removeJob/:jobId', (req, res) => {
     const jobId = req.params.jobId;
